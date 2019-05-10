@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand navbar-light bg-white justify-content-end">
+  <div class="nav-item dropdown">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+        <img [src]="'/assets/flags/' + translate.currentLang + '.svg'" class="img-flag">
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem *ngFor="let country of countries" (click)="switchLanguage(country.short)">{{country.short}}</button>
+      </div>
+    </div>
+  </div>
+</nav>

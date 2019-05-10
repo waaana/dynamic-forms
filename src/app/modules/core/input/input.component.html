@@ -1,0 +1,6 @@
+<div class="form-group row" [formGroup]="formGroup">
+  <label class="col-sm-2 col-form-label" for="{{element.id + counter}}" [translate]="element.label"></label>
+  <div class="col-sm-10">
+    <input class="form-control-plaintext" type="text" class="form-control" [formControlName]="element.label" name="{{element.id + counter}}" >
+  </div>
+</div>

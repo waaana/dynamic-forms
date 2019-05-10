@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+@import "~font-awesome/css/font-awesome.css";
+
+.cursor-click { cursor: pointer; };
+
+body {
+    margin-bottom: -20px;
+    min-width: 300px;
+}
+
+.img__medium {
+    width: 100px;
+}
+
+html {
+    min-height: 100%;
+    // background-color: $body__bg-color;
+}
+
+.img-flag {
+    width:20px;
+    height:15px;
+}

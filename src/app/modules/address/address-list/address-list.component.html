@@ -1,0 +1,16 @@
+<p>
+  address-list works!
+</p>
+
+<div *ngFor="let address of addresses">
+  <span>{{address}}</span>
+</div>
+
+<div #elementsContainer>
+  <div *ngFor="let formSetupInfo of formSetupInfoList; let i = index">
+    <app-element-container [formSetupInfo]="formSetupInfo" [counter]="i"></app-element-container>
+  </div>
+</div>
+
+<button (click)="createSetup('first')" class="btn btn-primary">Create first setup</button>
+<button (click)="createSetup('second')" class="btn btn-primary">Create second setup</button>
